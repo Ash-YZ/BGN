@@ -1,0 +1,154 @@
+
+.app-container {
+  display: block;
+}
+
+.app-header {
+  margin: 2vmin;
+  display: block;
+  font-size: 12px;
+}
+
+.app-logo {
+  height: 10vmin;
+}
+
+.app-messaging-container {
+  display: flex;
+  height: 75vh;
+}
+
+.app-messaging-left {
+  flex: 0.25;
+  /* background-color: rgba(211, 211, 211, 0.719); */
+}
+
+.app-messaging-right {
+  flex: 5;
+  /* background-color: rgba(226, 226, 226, 0.651); */
+  position: relative;
+}
+
+.app-messages-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.app-messages-body {
+  flex: 6;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.app-message-item {
+  position: relative;
+  display: block;
+  margin: 2vmin;
+  width: 200px;
+  padding: 2vmin 2vmin 8vmin 2vmin;
+  color: rgb(80, 80, 80);
+  background-image: linear-gradient(-30deg, #6fbd43, #cff5ba, #6fbd43);
+  -webkit-box-shadow: 2px 2px 15px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 15px -4px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 15px -4px rgba(0,0,0,0.75);
+}
+
+.app-message-item-info {
+  font-size: calc(1.2vmin);
+  font-style: italic;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.app-message-item-tags {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
+
+.app-message-item-delete {
+  position: absolute;
+  right: 1vmin;
+  top: 1vmin;
+  height: 2vmin;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.app-message-item-delete:hover {
+  opacity: 1;
+}
+
+.app-message-item-tag {
+  font-size: calc(1.8vmin);
+  font-style: italic;
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.app-message-item-tag:before {
+  content: "#";
+}
+
+.app-message-item-tag:last-child {
+  margin-right: 0;
+}
+
+.app-add-message {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 550px;
+  margin: 2vmin;
+  padding: 2vmin;
+  border: 2px solid black;
+}
+
+.app-message-add-content {
+  resize: none;
+  outline: none;
+  width: 545px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.app-message-add-tags {
+  display: block;
+  outline: none;
+  width: 545px;
+  height: 30px;
+  border: 1px solid black;
+}
+
+.app-message-add-wrapper {
+  position: relative;
+  display: block;
+  margin: 2vmin 0;
+  text-align: right;
+}
+
+.app-message-add {
+  position: relative;
+  display: inline-block;
+  color: rgb(80, 80, 80);
+  background-image: linear-gradient(-30deg, #6fbd43, #cff5ba, #6fbd43);
+  padding: 2vmin;
+  text-decoration: none;
+  font-size: 2vmin;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-message-add:hover,
+.app-message-add:focus {
+  color: rgb(80, 80, 80);
+  text-decoration: none;
+}
